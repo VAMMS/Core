@@ -16,7 +16,7 @@ jobs:
     - name: Build jobs image 
       run: docker build -t jobs -f VAMMS.Jobs/Dockerfile .
     - name: Tag core image
-      run: docker tag core registry.digitalocean.com/vzme/server:dev
+      run: docker tag core registry.digitalocean.com/vzme/core:dev
     - name: Tag jobs image
       run: docker tag jobs registry.digitalocean.com/vzme/jobs:dev
     - name: Push core image

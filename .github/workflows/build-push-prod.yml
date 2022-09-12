@@ -1,0 +1,25 @@
+name: Build & Push Prod
+on:
+  push:
+    branches:
+        - main
+jobs:
+  DockerBuildPush:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout the repo 
+      uses: actions/checkout@v2
+    - name: Log into registry
+      run: docker login -u ${{ secrets.DO_REGISTRY_TOKEN }} -p ${{ secrets.DO_REGISTRY_TOKEN }} registry.digitalocean.com
+    - name: Build core image 
+      run: docker build -t core -f VAMMS.Core/Dockerfile .
+    - name: Build jobs image 
+      run: docker build -t jobs -f VAMMS.Jobs/Dockerfile .
+    - name: Tag core image
+      run: docker tag core registry.digitalocean.com/vzme/server:latest
+    - name: Tag jobs image
+      run: docker tag jobs registry.digitalocean.com/vzme/jobs:latest
+    - name: Push core image
+      run: docker push registry.digitalocean.com/vzme/core:latest
+    - name: Push jobs image
+      run: docker push registry.digitalocean.com/vzme/jobs:latest

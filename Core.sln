@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32811.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Workflows", "Workflows", "{A996FF64-606E-49BC-B06A-AB61727DF080}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\build-push-dev.yml = .github\workflows\build-push-dev.yml
+		.github\workflows\build-push-prod.yml = .github\workflows\build-push-prod.yml
+		.github\workflows\build.yml = .github\workflows\build.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B2901B69-A200-41CC-9F72-55C8665A9971}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VAMMS.Core", "VAMMS.Core\VAMMS.Core.csproj", "{9F0FC5A2-75DD-4F7D-804D-51FBDDDE677F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VAMMS.Jobs", "VAMMS.Jobs\VAMMS.Jobs.csproj", "{BF7F8D75-1913-4AF6-B606-B4D2E4170140}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VAMMS.Shared", "VAMMS.Shared\VAMMS.Shared.csproj", "{AECAB668-3409-4754-992F-86B08E4C5BFB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9F0FC5A2-75DD-4F7D-804D-51FBDDDE677F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F0FC5A2-75DD-4F7D-804D-51FBDDDE677F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F0FC5A2-75DD-4F7D-804D-51FBDDDE677F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F0FC5A2-75DD-4F7D-804D-51FBDDDE677F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF7F8D75-1913-4AF6-B606-B4D2E4170140}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF7F8D75-1913-4AF6-B606-B4D2E4170140}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF7F8D75-1913-4AF6-B606-B4D2E4170140}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF7F8D75-1913-4AF6-B606-B4D2E4170140}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AECAB668-3409-4754-992F-86B08E4C5BFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AECAB668-3409-4754-992F-86B08E4C5BFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AECAB668-3409-4754-992F-86B08E4C5BFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AECAB668-3409-4754-992F-86B08E4C5BFB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A4ADB0C9-96B2-470E-9180-B22C30C09395}
+	EndGlobalSection
+EndGlobal
